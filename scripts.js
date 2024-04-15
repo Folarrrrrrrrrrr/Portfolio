@@ -46,7 +46,19 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
-
+const emailSendHandler =()=>{
+  Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "oluwolefolawe@gmail.com",
+    Password : "CC4A9FC13605F379F5457B530FE7A4137632",
+    To : 'oluwolefolawe@gmail.com',
+    From : "",
+    Subject : "This is the subject",
+    Body : "And this is the body"
+  }).then(
+  message => alert(message)
+  );
+}
 // slide-in sections ends
 
 
